@@ -1,5 +1,5 @@
 local config = require 'config.server'
-
+--[[
 local function removeHungerAndThirst(src, player)
     local newHunger = player.PlayerData.metadata.hunger - config.player.hungerRate
     local newThirst = player.PlayerData.metadata.thirst - config.player.thirstRate
@@ -61,3 +61,4 @@ CreateThread(function()
         end
     end
 end)
+]]--
