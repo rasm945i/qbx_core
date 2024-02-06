@@ -1,5 +1,5 @@
 local statusInterval = require 'config.client'.statusIntervalSeconds
-
+--[[
 CreateThread(function()
     local timeout = 1000 * statusInterval
     while true do
@@ -14,3 +14,4 @@ CreateThread(function()
         end
     end
 end)
+]]--
